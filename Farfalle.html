@@ -1,0 +1,332 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Favorite Recipes</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jacques+Francois+Shadow|Poiret+One|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ribeye|Ribeye+Marrow&display=swap" rel="stylesheet">
+    <!--Practice-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<!--End-->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Darker+Grotesque|Didact+Gothic|Josefin+Sans|Julius+Sans+One|Poppins|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      /*
+.nav {
+  overflow: hidden;
+  background-color: #ffa1a1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .nav a:hover {
+  background-color: #f75d5d;
+  color: white;
+}
+
+a.active  {
+  background-color: #f75d5d;
+}
+
+body {
+        /*background-color: #ffc936;
+  margin-left: 75px;
+              }*/
+h1 {
+  color: #f75d5d;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 75px; 
+  text-align: center; 
+  
+    
+      }
+      h2 {
+        color: #5e5c5c;
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 50px;
+        text-align: center;
+      }
+    
+      img {
+
+        border: 5px dashed white;
+        padding: 0px;
+        /*margin-left: 45px;*/  
+        float: right;
+
+      }
+      table, th, td {
+        border: 1px solid #f75d5d;
+      }
+      body{
+        margin-right: 75px;
+        margin-left: 35px;
+        background-image: url("https://image.architonic.com/img_pro2-4/149/1218/designer-laminate-collection-dskex400-h.jpg");
+        
+      }
+      
+      button{
+        float: right;
+      }
+
+      .Ingredients{
+        border: 5px dashed white;
+        background-color: #f75d5d;
+        padding: 20px;
+        width: 550px;
+        height: 300px;
+       font-family: 'Raleway', sans-serif;
+       opacity: .87;
+       
+       
+        color: white;
+      }
+       .Directions{
+        border: 5px dashed white;
+        opacity: .87;
+        padding: 20px;
+        background-color: #f75d5d;
+        height: 320px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+       
+      }
+      h3{
+        color: #5e5c5c; 
+        font-size: 25px;
+        font-family: 'Ribeye', cursive;
+        
+      }
+      /*.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  background-color: #ffa1a1;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffa1a1;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #ffa1a1;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f75d5d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffa1a1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #f75d5d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+    
+      </style>
+    <h1> My Favorite Recipes </h1>
+
+  <!--<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Desserts 
+      <i class="fa fa-caret-down"></i> 
+    </button>
+    <div class="dropdown-content">
+      <a href="Flan.html">Cheesecake Flan</a>
+      <a href="Muffin.html">Banana Muffins</a>
+    </div>
+  </div> 
+</div>-->
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="enterpass.html">Members Only </a>
+  <a href="Soup.html">Zuppa Toscana</a>
+  <a href="Farfalle.html">Farfalle Pasta</a>
+  <div class="dropdown">
+    <button class="dropbtn">Desserts 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Flan.html">Cheesecake Flan</a>
+      <a href="Muffin.html">Banana Muffins</a>
+      <a href="Cake.html">Chocolate Cake</a>
+    </div>
+  </div> 
+</div>
+
+
+    <h2> Pasta with Chicken and Roasted Garlic </h2>
+    <!--<img src="https://www.homecookingadventure.com/images/recipes/cheesecake_flan_main2.jpg"height="200px" width= "150px">-->
+    <img src="https://www.joyousapron.com/wp-content/uploads/2018/01/IMG_9565-2.jpg" height="318px" width="238.5px"">
+    <img src="https://www.thefedupfoodie.com/wp-content/uploads/2019/04/Easy-Bow-Tie-Pasta-with-Spinach-.jpg" height="318px" width="238.5px"">
+    <h3> Ingredients </h3>
+    
+    <ul class="Ingredients">
+      <li> 1 head roasted garlic cloves removed</li>
+      <li>2 chicken breasts boneless skinless</li>
+      <li>2 tablespoons extra virgin olive oil</li>
+      <li>½ teaspoon salt</li>
+      <li>¼ teaspoon coarse ground black pepper</li>
+      <li>1 pound Gluten-Free bow tie pasta aka farfalle, cooked and drained -but not rinsed</li>
+      <li>12 ounces center cut bacon cut into strips</li>
+      <li>8 ounces crimini mushrooms quartered</li>
+      <li>½ yellow onion chopped</li>
+      <li>½ cup sun dried tomatoes reserve the oil and chop roughly</li>
+      <li>¾ cup white wine</li>
+      <li>1 cup heavy cream</li>
+      <li>¾ cup Parmesan cheese</li>
+
+    </ul>
+    
+    <h3> Directions </h3>
+    <ol class="Directions">
+      <li> Slice the top off the head of garlic exposing every clove.</li>
+      <li>In a piece of foil drizzle some olive oil then place garlic cut side down.</li>
+      <li>Roast for 30 minutes or until deeply browned.</li>
+      <li>Let cool before removing from head of garlic.</li>
+      <li>If you haven't cooked the pasta, cook it now according to the directions on the box.</li>
+      <li>Cut the chicken into 1" cubes and season with kosher salt and black pepper.</li>
+      <li>To a cast iron skillet add the olive oil on high heat.</li>
+      <li>Cook the chicken until browned on both sides, about 2-3 minutes on each side</li>
+      <li>Remove from the pan, reduce the heat to medium-high heat and add in the bacon.</li>
+      <li>Cook until crisp and remove the bacon (leave the fat).</li>
+      <li>Add in the mushrooms and onions and cook for 5-7 minutes until they start browning.</li>
+      <li>Remove the mushrooms and onions from the pan to where the chicken and bacon are.</li>
+      <li>Add in the sun dried tomatoes, white wine, and stir well, then let reduce by half, about 15 minutes.</li>
+      <li>Add in the heavy cream, roasted garlic, chicken and vegetables.</li>
+      <li>Add in most of the Parmesan cheese leaving just a garnishing amount.</li>
+      <li>Stir well, then add in the pasta and bacon and combine everything.</li>
+      <li>Garnish with remaining Parmesan cheese.</li>
+
+    </ol>
+      
+    <table>
+      <tr>
+        <th> Total Time </th>
+        <th> Servings </th>
+      </tr>
+      <tr>
+        <td> 50 min </td>
+        <td> 4 </td>
+      </tr>
+    </table>
+
+   
+  </body>
+</html>
