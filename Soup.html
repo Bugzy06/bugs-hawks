@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>My Favorite Recipes</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Poiret+One&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Amatic+SC|Jacques+Francois+Shadow|Poiret+One|Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat|Ribeye|Ribeye+Marrow&display=swap" rel="stylesheet">
+    <!--Practice-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<!--End-->
+<link href="https://fonts.googleapis.com/css?family=Amatic+SC|Darker+Grotesque|Didact+Gothic|Josefin+Sans|Julius+Sans+One|Poppins|Shadows+Into+Light+Two&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <style>
+      /*
+.nav {
+  overflow: hidden;
+  background-color: #ffa1a1;
+  font-family: 'Amatic SC', cursive;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav a {
+  float: left;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+ .nav a:hover {
+  background-color: #f75d5d;
+  color: white;
+}
+
+a.active  {
+  background-color: #f75d5d;
+}
+
+body {
+        /*background-color: #ffc936;
+  margin-left: 75px;
+              }*/
+h1 {
+  color: #f75d5d;
+  font-family: 'Julius Sans One', sans-serif;
+  font-size: 75px; 
+  text-align: center; 
+  
+    
+      }
+      h2 {
+        color: #5e5c5c;
+        font-family: 'Shadows Into Light Two', cursive;
+        font-size: 50px;
+        text-align: center;
+      }
+    
+      img {
+
+        border: 5px dashed white;
+        padding: 0px;
+        /*margin-left: 45px;*/  
+        float: right;
+
+      }
+      table, th, td {
+        border: 1px solid #f75d5d;
+      }
+      body{
+        margin-right: 50px;
+        margin-left: 50px;
+        background-image: url("https://image.architonic.com/img_pro2-4/149/1218/designer-laminate-collection-dskex400-h.jpg");
+        
+      }
+      iframe{
+        border: 5px dashed white;
+        padding: 0px;
+        margin-left: 45px;
+        float: right;
+      }
+      button{
+        float: right;
+      }
+
+      .Ingredients{
+        border: 5px dashed white;
+        background-color: #f75d5d;
+        padding: 20px;
+        width: 250px;
+        height: 260px;
+       font-family: 'Raleway', sans-serif;
+       opacity: .87;
+       
+        color: white;
+      }
+       .Directions{
+        border: 5px dashed white;
+        opacity: .87;
+        padding: 20px;
+        background-color: #f75d5d;
+        height: 190px;
+        color: white;
+        font-family: 'Raleway', sans-serif;
+       
+      }
+      h3{
+        color: #5e5c5c; 
+        font-size: 25px;
+        font-family: 'Ribeye', cursive;
+        
+      }
+      /*.dropdown {
+  float: left;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.nav a:hover, .dropdown:hover .dropbtn {
+  background-color: red;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}*/
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  background-color: #ffa1a1;
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  background-color: #ffa1a1;
+  
+}
+
+.dropdown {
+  float: left;
+  overflow: hidden;
+  
+}
+
+.dropdown .dropbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: #ffa1a1;
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: #f75d5d;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffa1a1;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  
+}
+
+.dropdown-content a {
+  float: none;
+  color: white;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+  font-family: 'Poppins', sans-serif;
+  
+}
+
+.dropdown-content a:hover {
+  background-color: #f75d5d;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+  
+    
+      </style>
+    <h1> My Favorite Recipes </h1>
+
+  <!--<div class="nav">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <div class="dropdown">
+    <button class="dropbtn">Desserts 
+      <i class="fa fa-caret-down"></i> 
+    </button>
+    <div class="dropdown-content">
+      <a href="Flan.html">Cheesecake Flan</a>
+      <a href="Muffin.html">Banana Muffins</a>
+    </div>
+  </div> 
+</div>-->
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <a href="About.html">About</a>
+  <a href="Contact.html">Contact</a>
+  <a href="enterpass.html">Members Only </a>
+  <a href="Soup.html">Zuppa Toscana</a>
+  <a href="Farfalle.html">Farfalle Pasta</a>
+  <div class="dropdown">
+    <button class="dropbtn">Desserts 
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content">
+      <a href="Flan.html">Cheesecake Flan</a>
+      <a href="Muffin.html">Banana Muffins</a>
+      <a href="Cake.html">Chocolate Cake</a>
+    </div>
+  </div> 
+</div>
+
+
+    <h2> Zuppa Toscana </h2>
+    <!--<img src="https://www.homecookingadventure.com/images/recipes/cheesecake_flan_main2.jpg"height="200px" width= "150px">-->
+    
+    <img src="https://mealplannerpro.com/images/recipes/2106/1936615.jpg" width= "270px" height="405px">
+    <img src="https://alyonascooking.com/wp-content/uploads/2017/03/zuppa-toscana-recipe-olive-garden-copycat-IMG_5929_.jpg" width="270px" height="405px">
+    <img src="https://k8643br9gv-flywheel.netdna-ssl.com/wp-content/uploads/2018/11/2-650-instant-pot-low-carb-zuppa-toscana-soup-600x900.jpg"width="270px" height="405px">
+    <h3> Ingredients </h3>
+    
+    <ul class="Ingredients">
+      <li> 1 pound itaian sausage (spicy) </li>
+      <li>4-6 russet potatoes, cut into bite-sized cubes</li>
+      <li>1 onion, chopped</li>
+      <li>2 tablespoons garlic, minced</li>
+      <li>32 ounces chicken broth</li>
+      <li>½ bunch kale, destemmed and cut/torn into bite-sized pieces</li>
+      <li>1 cup heavy whipping cream</li>
+      <li>2 tablespoons flour</li>
+      <li>Salt and pepper to taste</li>
+      <li>Cayenne pepper to taste</li> 
+      <li>¼ cup bacon, cooked and chopped</li>
+
+    </ul>
+    
+    <h3> Directions </h3>
+    <ol class="Directions">
+      <li> Brown sausage links in a sauté pan</li>
+      <li>Cut links in half lengthwise, then cut slices.</li> 
+      <li>Place sausage, chicken broth, garlic, potatoes and onion in slow cooker. Add just enough water to cover the vegetables and meat</li>
+      <li>Cook on high 3-4 hours (low 5-6 hours) until potatoes are soft.</li>
+      <li>30 minutes before serving:</li>
+      <li>Mix flour into cream removing lumps.</li>
+      <li>Add cream and kale to the crock pot, stir.</li>
+      <li>Cook on high 30 minutes or until broth thickens slightly.</li>
+      <li>Add salt, pepper, and cayenne to taste</li>
+      <li>Top with bacon immediately before serving.</li>
+
+    </ol>
+      
+    <!--<table>
+      <tr>
+        <th> Total Time </th>
+        <th> Servings </th>
+      </tr>
+      <tr>
+        <td> 1 hour </td>
+        <td> 10 </td>
+      </tr>
+    </table>-->
+
+    
+  </body>
+</html>
